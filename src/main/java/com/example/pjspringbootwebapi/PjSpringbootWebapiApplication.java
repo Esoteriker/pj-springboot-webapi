@@ -1,7 +1,7 @@
 package com.example.pjspringbootwebapi;
 
 import com.example.pjspringbootwebapi.run.Location;
-import com.example.pjspringbootwebapi.run.RunRecord;
+import com.example.pjspringbootwebapi.run.Run;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
@@ -26,7 +26,7 @@ public class PjSpringbootWebapiApplication {
     @Bean
     CommandLineRunner runner() {
         return args -> {
-            RunRecord runRecord = new RunRecord(1,"first run", LocalDateTime.now(), LocalDateTime.now().plus(1, ChronoUnit.HOURS),5, Location.OUTDOOR);
+            Run runRecord = new Run(1,"first run", LocalDateTime.now(), LocalDateTime.now().plus(1, ChronoUnit.HOURS),5, Location.OUTDOOR);
             log.info("first run: " + runRecord);
         };
     }
