@@ -1,4 +1,4 @@
-package foo.bar;
+package com.example.pjspringbootwebapi;
 
 import org.springframework.stereotype.Component;
 
